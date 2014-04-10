@@ -46,6 +46,15 @@ class Honeyanalysis(object):
 		conns = self.cur.fetchall()
 		data = self.parseData(conns)
 		return data
+	def defaultPasswords(self):
+		""" This function returns the defualt passwords that were used with variety usernames
+		Thanks to Steeve Barbeau blog for the SQL statements
+		http://blog.sbarbeau.fr/2011/10/some-stats-of-my-dionaea-honeypot.html
+		"""
+		self.cur.execute("select count(logins.login_username||logins.login_password) as count, logins.login_username, logins.login_password, connections.connection_protocol, connections.local_port from logins, connections where connections.connection = logins.connection group by (logins.login_username||logins.login_password) order by count desc")
+		conns = self.cur.fetchall()
+		data = self.parseData(conns)
+		return data
 
 	def uniqueIPS(self):
 		""" Display unique IPs """
