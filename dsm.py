@@ -1,9 +1,6 @@
 #!/usr/bin/python
 #
 #
-#
-#
-#
 __author__ = 'Jacolon Walker'
 
 import sqlite3 as lite
