@@ -13,6 +13,7 @@ DSM has a potential to keep growing as new threats and analysis techniques arise
 
 ## Usage:
 ### quickanalysis.py - a test script to show DSM usage
+```
 ./quickanalysis.py
 ------------------------------
 Connections/Protos @ Glance
@@ -47,3 +48,4 @@ smb://114.86.186.78/csrss.exe - 065172e07a125623ea0a0fbcdaaa6dee
 http://96.51.70.82:28113/x - 743132b629b3f160aa640dde052d4151
 smb://78.97.136.59/csrss.exe - 3a5c1c2ce9bd9f21bcf0e87dae4c0fed
 ------------------------------
+```
