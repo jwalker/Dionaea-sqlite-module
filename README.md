@@ -12,7 +12,7 @@ downloads by hashes offering original execution links, and SIP information.
 DSM has a potential to keep growing as new threats and analysis techniques arise. The module was written in a generic way to illustrate what can be done once your honeypot has enough data to be processed. Any suggestions or ideas are welcome.
 
 ## Usage:
-### quickanalysis.py - a test script to show DSM usage
+#### quickanalysis.py - a test script to show DSM usage
 ```
 ./quickanalysis.py
 ------------------------------
